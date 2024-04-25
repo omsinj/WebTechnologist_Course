@@ -120,3 +120,35 @@ nav ul li a:hover {
   margin-right: 20px;
 }
 
+/* Breadcrumb styles */
+.breadcrumb {
+  padding: 10px;
+  background-color: #f9f9f9; /* Light grey background */
+}
+
+.breadcrumb ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb ul li {
+  display: inline;
+}
+
+.breadcrumb ul li:not(:last-child):after {
+  content: ">";
+  margin: 0 5px; /* Space between breadcrumbs */
+}
+
+.breadcrumb ul li a {
+  text-decoration: none;
+  color: #666; /* Light grey text color */
+  font-size: 14px; /* Slightly larger font size */
+}
+
+.breadcrumb ul li a:hover {
+  text-decoration: underline;
+}
+
+
