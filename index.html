@@ -9,27 +9,24 @@
 <body>
 
 <header>
-  <nav>
-    <!-- Header navigation menu -->
-  </nav>
+  <!-- Header content -->
 </header>
 
 <main>
+  <div class="breadcrumb">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><span>></span></li>
+      <li><a href="#">Category</a></li>
+      <li><span>></span></li>
+      <li><a href="#">Subcategory</a></li>
+      <li><span>></span></li>
+      <li>Current Page</li>
+    </ul>
+  </div>
+
   <div class="content">
     <!-- Main content -->
-  </div>
-  <div class="sidebar">
-    <!-- Sidebar menu -->
-    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
-    <div class="sidebar-content">
-      <h2>Filters</h2>
-      <ul>
-        <li><a href="#">Category 1</a></li>
-        <li><a href="#">Category 2</a></li>
-        <li><a href="#">Category 3</a></li>
-        <!-- Add more categories as needed -->
-      </ul>
-    </div>
   </div>
 </main>
 
@@ -40,3 +37,34 @@
 <script src="script.js"></script>
 </body>
 </html>
+/* Breadcrumb styles */
+.breadcrumb {
+  padding: 10px;
+  background-color: #f9f9f9; /* Light grey background */
+}
+
+.breadcrumb ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb ul li {
+  display: inline;
+}
+
+.breadcrumb ul li:not(:last-child):after {
+  content: ">";
+  margin: 0 5px; /* Space between breadcrumbs */
+}
+
+.breadcrumb ul li a {
+  text-decoration: none;
+  color: #666; /* Light grey text color */
+  font-size: 14px; /* Slightly larger font size */
+}
+
+.breadcrumb ul li a:hover {
+  text-decoration: underline;
+}
+
