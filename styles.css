@@ -26,6 +26,40 @@ nav ul li {
   margin: 0 15px;
 }
 
+/* Search bar styles */
+.search-bar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  outline: none; /* Remove default focus outline */
+}
+
+.search-bar button {
+  padding: 10px;
+  background-color: #007bff; /* Blue background color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  margin-left: -45px; /* Adjust position to align with input */
+  cursor: pointer;
+}
+
+.search-bar button img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+
 nav ul li a {
   text-decoration: none;
   color: #fff;
