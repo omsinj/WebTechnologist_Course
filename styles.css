@@ -26,40 +26,6 @@ nav ul li {
   margin: 0 15px;
 }
 
-/* Search bar styles */
-.search-bar {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.search-bar input[type="text"] {
-  width: 300px;
-  padding: 10px;
-  border: 1px solid #ccc; /* Light grey border */
-  border-radius: 5px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-  outline: none; /* Remove default focus outline */
-}
-
-.search-bar button {
-  padding: 10px;
-  background-color: #007bff; /* Blue background color */
-  border: none;
-  border-radius: 5px; /* Rounded corners */
-  margin-left: -45px; /* Adjust position to align with input */
-  cursor: pointer;
-}
-
-.search-bar button img {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-}
-
-
 nav ul li a {
   text-decoration: none;
   color: #fff;
@@ -93,6 +59,72 @@ nav ul li a:hover {
 
 .dropdown-menu li a:hover {
   color: #ffcc00; /* Hover color */
+}
+
+/* Search bar styles */
+.search-bar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  outline: none; /* Remove default focus outline */
+}
+
+.search-bar button {
+  padding: 10px;
+  background-color: #007bff; /* Blue background color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  margin-left: -45px; /* Adjust position to align with input */
+  cursor: pointer;
+}
+
+/* Filter styles */
+.filters {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+}
+
+.filter label {
+  margin-right: 10px;
+}
+
+.filter select,
+.filter input[type="checkbox"] {
+  padding: 8px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  color: #333; /* Dark text color */
+}
+
+.filter select {
+  -webkit-appearance: none; /* Remove default arrow in Chrome/Safari */
+  -moz-appearance: none; /* Remove default arrow in Firefox */
+  appearance: none; /* Remove default arrow */
+  background-image: url('arrow-down-icon.png'); /* Add custom arrow icon */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.filter input[type="checkbox"] {
+  margin-right: 5px;
 }
 
 /* Sidebar styles */
@@ -184,5 +216,55 @@ nav ul li a:hover {
 .breadcrumb ul li a:hover {
   text-decoration: underline;
 }
+
+/* Footer styles */
+footer {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.social-media a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-media a:hover img {
+  transform: scale(1.2);
+}
+
+.subscription input[type="email"] {
+  padding: 8px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.subscription button {
+  padding: 8px 20px;
+  background-color: #007bff; /* Blue background color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  color: #fff; /* White text color */
+  cursor: pointer;
+}
+
+.subscription button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
 
 
