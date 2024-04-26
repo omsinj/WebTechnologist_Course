@@ -3,115 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> ZoneInOut Intel News Aggregator</title>
+  <title>ZoneInOut - Intelligence News</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-  <div class="search-bar">
-    <input type="text" placeholder="Search...">
-    <button type="submit"><img src="search-icon.png" alt="Search"></button>
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">ZoneInOut</a>
+    <nav class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Sections</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">World News</a></li>
+            <li><a href="#">Politics</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Analysis</a></li>
+            <li><a href="#">Opinion</a></li>
+          </ul>
+        </li>
+        <li><a href="https://www.google.com" target="_blank">Search (Google)</a></li>
+        <li><a href="user-profile.html">User Profile</a></li>
+      </ul>
+    </nav>
   </div>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li class="dropdown">
-        <a href="#">Sections</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">News</a></li>
-          <li><a href="#">Analysis</a></li>
-          <li><a href="#">Opinion</a></li>
-          <li><a href="#">Topics</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Search</a></li>
-      <li><a href="#">User Profile</a></li>
-    </ul>
-  </nav>
 </header>
 
-<main>
-  <div class="filters">
-    <div class="filter">
-      <label>Date:</label>
-      <select>
-        <option value="latest">Latest</option>
-        <option value="oldest">Oldest</option>
-      </select>
-    </div>
-    <div class="filter">
-      <label>Relevance:</label>
-      <select>
-        <option value="relevant">Most Relevant</option>
-        <option value="less-relevant">Less Relevant</option>
-      </select>
-    </div>
-    <div class="filter">
-      <label>Source:</label>
-      <input type="checkbox" id="source1" name="source1">
-      <label for="source1">Source 1</label>
-      <input type="checkbox" id="source2" name="source2">
-      <label for="source2">Source 2</label>
-    </div>
-  </div>
+<main class="main">
+  <div class="container">
+    <div class="row">
+      <aside class="col-lg-3 sidebar">
+        <div class="sidebar-content">
+          <h2 class="sidebar-title">Categories</h2>
+          <ul class="list-unstyled">
+            <li><a href="#">World</a></li>
+            <li><a href="#">Politics</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Technology</a></li>
+          </ul>
+        </div>
+      </aside>
+      <div class="col-lg-9 content-wrapper">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">World News</a></li>
+          </ol>
+        </nav>
 
-  <!-- Breadcrumb navigation -->
-  <div class="breadcrumb">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><span>></span></li>
-      <li><a href="#">Category</a></li>
-      <li><span>></span></li>
-      <li><a href="#">Subcategory</a></li>
-      <li><span>></span></li>
-      <li>Current Page</li>
-    </ul>
-  </div>
+        <section class="featured">
+          <h2 class="section-title">Featured Stories</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <img src="featured-article-1.jpg" class="card-img-top" alt="Featured Article 1">
+                <div class="card-body">
+                  <h3 class="card-title">Breaking News: Major Political Upheaval in Eastern Europe</h3>
+                  <p class="card-text">Read the latest developments...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <img src="featured-article-2.jpg" class="card-img-top" alt="Featured Article 2">
+                <div class="card-body">
+                  <h3 class="card-title">Expert Analysis: Decoding the Global Economic Forecast</h3>
+                  <p class="card-text">Gain insights from leading economists...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-  <!-- Sidebar menu -->
-  <div class="sidebar">
-    <div class="sidebar-content">
-      <h2>Sidebar</h2>
-      <ul>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-        <!-- Add more links as needed -->
-      </ul>
+        <section class="latest-news">
+          <h2 class="section-title">Latest News</h2>
+          <div class="filters">
+            <label for="date-filter">Date:</label>
+            <select id="date-filter" class="custom-select">
+              <option value="latest">Latest</option>
+              <option value="oldest">Oldest</option>
+              <option value="custom">Custom Range</option>
+            </select>
+            <label for="sort-by">Sort by:</label>
+            <select id="sort-by" class="custom-select">
+              <option value="relevance">Relevance</option>
+              <option value="popularity">Popularity</option>
+              <option value="date">Date</option>
+            </select>
+          </div>
+          <div class="news-list">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h3 class="card-title"><a href="https://www.geopoliticalmonitor.com/maritime-chessboard-the-geopolitical-dynamics-of-the-south-china-sea/">Geopolitical Tensions Rise in the South China Sea</a></h3>
+                <p class="card-text">Rising military presence in the disputed region sparks international concern...</p>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h3 class="card-title"><a href="https://www.bbc.co.uk/news/live/cy635006p1pt">SNP Leadership Turmoil After Power-Sharing Deal Collapses</a></h3>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h3 class="card-title"><a href="https://www.aljazeera.com/news/liveblog/2024/4/26/israels-war-on-gaza-live-un-says-preserve-evidence-of-gaza-mass-graves">Israel’s War on Gaza Live: Artillery Shelling Hammers Rafah</a></h3>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
-    <button class="toggle-btn" onclick="toggleSidebar()">Close Sidebar</button>
-  </div>
-
-  <!-- Main content -->
-  <div class="content">
-    <h1>Main Content</h1>
-    <p>ZoneInOut News Aggregator side for intelligence professionals........</p>
   </div>
 </main>
 
-<footer>
-  <div class="footer-content">
-    <div class="footer-links">
-      <a href="#">About Us</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
-      <a href="#">FAQs</a>
-    </div>
-    <div class="social-media">
-      <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-      <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-      <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-    </div>
-    <div class="subscription">
-      <input type="email" placeholder="Enter your email">
-      <button type="submit">Subscribe</button>
-    </div>
-  </div>
-</footer>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href
 
-<script src="script.js"></script>
-</body>
-</html>
+
 
